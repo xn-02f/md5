@@ -1,0 +1,27 @@
+{
+  "name": "md5",
+  "version": "1.0.0",
+  "description": "MD5 library, convert string to MD5 hash.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xn-02f/md5.git"
+  },
+  "author": {
+    "name": "xn-02f"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xn-02f/md5/issues"
+  },
+  "homepage": "https://github.com/xn-02f/md5#readme",
+  "keywords": [
+    "js",
+    "MD5",
+    "crypto",
+    "hash"
+  ]
+}
