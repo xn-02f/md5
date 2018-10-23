@@ -6,10 +6,13 @@
 ## Install
 Via npm :
 ```bash
-$ npm i md5
+$ npm i https://github.com/xn-02f/md5.git
+# More to https://docs.npmjs.com/cli/install#synopsis
 ```
 ## Usage
 ```javascript
+const md5 = require('md5');
+
 md5(value)
 ```
 Parameter | returns
