@@ -6,7 +6,7 @@
 ## Install
 Via npm :
 ```bash
-$ npm i https://github.com/xn-02f/md5.git
+$ npm i https://github.com/xn-02f/md5
 # More to https://docs.npmjs.com/cli/install#synopsis
 ```
 ## Usage
