@@ -21,11 +21,6 @@
   "homepage": "https://github.com/xn-02f/md5#readme",
   "keywords": [
     "js",
-    "MD5",
-    "crypto",
-    "hash"
-  ],
-  "devDependencies": {
-    "mocha": "^5.2.0"
-  }
+    "MD5"
+  ]
 }
