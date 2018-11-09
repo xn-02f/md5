@@ -15,11 +15,11 @@ $ npm i xn-02f/md5
 ```javascript
 const md5 = require('md5');
 
-md5(value)
+md5('xn-02f');  // return '54d30fa674d13e3598970bc9c5e2388e'
 ```
-Parameter | returns
+Parameter | return
 -- | --
-`value`<br>`string`<br>The value to be converted. | `string`<br>MD5 hex hash string.
+`string`<br>The value to be converted. | `string`<br>MD5 hex hash string.
 
 ## License
 > [MIT](https://github.com/huiyifyj/comment.js/blob/master/LICENSE)
