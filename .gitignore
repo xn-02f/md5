@@ -6,6 +6,7 @@ package-lock.json
 
 # yarn
 yarn.lock
+yarn-error.log
 
 # Mac
 .DS_Store
@@ -13,6 +14,3 @@ yarn.lock
 
 # VS Code
 .vscode/
-
-# Others
-dist/

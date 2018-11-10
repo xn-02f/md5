@@ -1,5 +1,5 @@
 {
-  "name": "md5",
+  "name": "@xn-02f/md5",
   "version": "1.0.0",
   "description": "A MD5 library without dependencies for node, convert string to MD5 hash.",
   "main": "md5.js",
