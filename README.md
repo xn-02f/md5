@@ -6,10 +6,7 @@
 ## Install
 Via npm :
 ```bash
-$ npm i https://github.com/xn-02f/md5
-# Or
-$ npm i xn-02f/md5
-# More to https://docs.npmjs.com/cli/install#synopsis
+$ npm i @xn-02f/md5
 ```
 ## Usage
 ```javascript
