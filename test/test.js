@@ -3,7 +3,7 @@
  */
 const assert = require('assert');
 
-const md5 = require('./md5');
+const md5 = require('../md5');
 
 // Instance Object for Testing
 const example = {
