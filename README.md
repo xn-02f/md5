@@ -23,5 +23,5 @@ Parameter | return
 > [MIT](https://github.com/xn-02f/md5/blob/master/LICENSE)
 
 <div align=center>
-    &copy; 2018 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
+    &copy; 2019 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
 </div>
