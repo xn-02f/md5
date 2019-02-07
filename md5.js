@@ -169,8 +169,8 @@ const binlMD5 = (x, len) => {
 
 const binl2rstr = (input) => {
 
+    const length32 = input.length * 32;
     let output = '';
-    let length32 = input.length * 32;
 
     for (let i = 0; i < length32; i += 8) {
         output += String.fromCharCode((input[i >> 5] >>> (i % 32)) & 0xff);
