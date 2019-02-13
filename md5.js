@@ -21,7 +21,6 @@ module.exports = (value) => {
     const rawString = binl2rstr(binlMD5Arr);
 
     return rawStringToHex(rawString);
-
 }
 
 const rstr2binl = (input) => {
@@ -39,7 +38,6 @@ const rstr2binl = (input) => {
     }
 
     return output;
-
 }
 
 const safeAdd = (x, y) => {
@@ -48,7 +46,6 @@ const safeAdd = (x, y) => {
     let msw = (x >> 16) + (y >> 16) + (lsw >> 16);
 
     return (msw << 16) | (lsw & 0xffff);
-
 }
 
 const bitRotateLeft = (num, cnt) => {
@@ -164,7 +161,6 @@ const binlMD5 = (x, len) => {
     }
 
     return [a, b, c, d];
-
 }
 
 const binl2rstr = (input) => {
@@ -177,7 +173,6 @@ const binl2rstr = (input) => {
     }
 
     return output;
-
 }
 
 const rawStringToHex = (input) => {
@@ -191,5 +186,4 @@ const rawStringToHex = (input) => {
     }
 
     return output;
-
 }
