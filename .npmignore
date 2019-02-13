@@ -1,7 +1,0 @@
-# Ignore all file default
-*
-
-# Exceptional files
-!package.json
-!md5.js
-!README.md

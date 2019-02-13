@@ -19,11 +19,14 @@
     "url": "https://github.com/xn-02f/md5/issues"
   },
   "homepage": "https://github.com/xn-02f/md5#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "files": [
+    "md5.js"
+  ],
   "keywords": [
     "js",
     "MD5"
-  ],
-  "devDependencies": {
-    "mocha": "^5.2.0"
-  }
+  ]
 }
