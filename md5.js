@@ -10,9 +10,9 @@
  * @param {string} string The raw string you want to convert.
  * @return {string} The hexadecimal hash string that is handled and converted.
  */
-module.exports = (string) => {
+module.exports = (value) => {
 
-    const stringUTF8 = unescape(encodeURIComponent(string));
+    const stringUTF8 = unescape(encodeURIComponent(value));
 
     const stringNumArr = rstr2binl(stringUTF8);
 
