@@ -7,7 +7,7 @@
 /**
  * Convert string to md5 hash.
  *
- * @param {string} string The raw string you want to convert.
+ * @param {string} value The raw string you want to convert.
  * @return {string} The hexadecimal hash string that is handled and converted.
  */
 module.exports = (value) => {
