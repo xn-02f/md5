@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "A MD5 library without dependencies for node, convert string to MD5 hash.",
   "main": "md5.js",
+  "types": "md5.d.ts",
   "scripts": {
     "test": "mocha"
   },
