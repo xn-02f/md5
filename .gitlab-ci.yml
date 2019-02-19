@@ -1,0 +1,14 @@
+# GitLab CI configuration file
+# https://gitlab.com/xn-02f/md5
+image: node:latest
+
+stages:
+  - test
+
+before_script:
+  - npm install
+
+test:
+  stage: test
+  script:
+    - npm run test
