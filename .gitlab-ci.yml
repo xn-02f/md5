@@ -6,9 +6,9 @@ stages:
   - test
 
 before_script:
-  - npm install
+  - npm i
 
 test:
   stage: test
   script:
-    - npm run test
+    - npm test

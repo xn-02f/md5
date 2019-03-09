@@ -11,5 +11,5 @@ steps:
 # Test
 - script: |
     npm i
-    npm run test
-  displayName: 'Test by mocha'
+    npm test
+  displayName: 'Test'
