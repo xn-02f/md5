@@ -85,7 +85,7 @@ const binlMD5 = (x, len) => {
     const originD = d;
 
     for (let i = 0; i < x.length; i += 16) {
-        // First cycle
+        /* Round 1 */
         a = md5ff(a, b, c, d, x[i], 7, -680876936);
         d = md5ff(d, a, b, c, x[i + 1], 12, -389564586);
         c = md5ff(c, d, a, b, x[i + 2], 17, 606105819);
@@ -102,7 +102,7 @@ const binlMD5 = (x, len) => {
         d = md5ff(d, a, b, c, x[i + 13], 12, -40341101);
         c = md5ff(c, d, a, b, x[i + 14], 17, -1502002290);
         b = md5ff(b, c, d, a, x[i + 15], 22, 1236535329);
-        // Second cycle
+        /* Round 2 */
         a = md5gg(a, b, c, d, x[i + 1], 5, -165796510);
         d = md5gg(d, a, b, c, x[i + 6], 9, -1069501632);
         c = md5gg(c, d, a, b, x[i + 11], 14, 643717713);
@@ -119,7 +119,7 @@ const binlMD5 = (x, len) => {
         d = md5gg(d, a, b, c, x[i + 2], 9, -51403784);
         c = md5gg(c, d, a, b, x[i + 7], 14, 1735328473);
         b = md5gg(b, c, d, a, x[i + 12], 20, -1926607734);
-        // Third cycle
+        /* Round 3 */
         a = md5hh(a, b, c, d, x[i + 5], 4, -378558);
         d = md5hh(d, a, b, c, x[i + 8], 11, -2022574463);
         c = md5hh(c, d, a, b, x[i + 11], 16, 1839030562);
@@ -136,7 +136,7 @@ const binlMD5 = (x, len) => {
         d = md5hh(d, a, b, c, x[i + 12], 11, -421815835);
         c = md5hh(c, d, a, b, x[i + 15], 16, 530742520);
         b = md5hh(b, c, d, a, x[i + 2], 23, -995338651);
-        // Fourth cycle
+        /* Round 4 */
         a = md5ii(a, b, c, d, x[i], 6, -198630844);
         d = md5ii(d, a, b, c, x[i + 7], 10, 1126891415);
         c = md5ii(c, d, a, b, x[i + 14], 15, -1416354905);
@@ -153,7 +153,7 @@ const binlMD5 = (x, len) => {
         d = md5ii(d, a, b, c, x[i + 11], 10, -1120210379);
         c = md5ii(c, d, a, b, x[i + 2], 15, 718787259);
         b = md5ii(b, c, d, a, x[i + 9], 21, -343485551);
-        // Last cycle
+        /* Round Last */
         a = safeAdd(a, originA);
         b = safeAdd(b, originB);
         c = safeAdd(c, originC);
