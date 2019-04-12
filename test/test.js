@@ -20,7 +20,6 @@ const md5Hash = {
 }
 
 describe('MD5 Test', () => {
-
     it('"' + example.name + '" Converted to MD5 Value Test.', () => {
         assert.equal(md5(example.name), md5Hash.name);
     });
@@ -32,5 +31,4 @@ describe('MD5 Test', () => {
     it('"' + example.url + '" Converted to MD5 Value Test.', () => {
         assert.equal(md5(example.url), md5Hash.url);
     });
-
 });

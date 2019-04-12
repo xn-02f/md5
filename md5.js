@@ -10,8 +10,7 @@
  * @param {string} value The raw string you want to convert.
  * @return {string} The hexadecimal hash string that is handled and converted.
  */
-module.exports = (value) => {
-
+module.exports = value => {
     const stringUTF8 = unescape(encodeURIComponent(value));
 
     const stringNumArr = rstr2binl(stringUTF8);
@@ -23,8 +22,7 @@ module.exports = (value) => {
     return rawStringToHex(rawString);
 }
 
-const rstr2binl = (input) => {
-
+const rstr2binl = input => {
     let output = [];
 
     output[(input.length >> 2) - 1] = undefined;
@@ -41,7 +39,6 @@ const rstr2binl = (input) => {
 }
 
 const safeAdd = (x, y) => {
-
     let lsw = (x & 0xffff) + (y & 0xffff);
     let msw = (x >> 16) + (y >> 16) + (lsw >> 16);
 
@@ -51,33 +48,20 @@ const safeAdd = (x, y) => {
 /**
  * bitRotateLeft rotates x left n bits.
  */
-const bitRotateLeft = (num, cnt) => {
-    return (num << cnt) | (num >>> (32 - cnt));
-}
+const bitRotateLeft = (num, cnt) => (num << cnt) | (num >>> (32 - cnt));
 
-const md5cmn = (q, a, b, x, s, t) => {
-    return safeAdd(bitRotateLeft(safeAdd(safeAdd(a, q), safeAdd(x, t)), s), b);
-}
+const md5cmn = (q, a, b, x, s, t) => safeAdd(bitRotateLeft(safeAdd(safeAdd(a, q), safeAdd(x, t)), s), b);
 
 /**
  * FF, GG, HH, and II transformations for rounds 1, 2, 3, and 4.
  * Rotation is separate from addition to prevent recomputation.
  */
-const FF = (a, b, c, d, x, s, t) => {
-    return md5cmn((b & c) | (~b & d), a, b, x, s, t);
-}
-const GG = (a, b, c, d, x, s, t) => {
-    return md5cmn((b & d) | (c & ~d), a, b, x, s, t);
-}
-const HH = (a, b, c, d, x, s, t) => {
-    return md5cmn(b ^ c ^ d, a, b, x, s, t);
-}
-const II = (a, b, c, d, x, s, t) => {
-    return md5cmn(c ^ (b | ~d), a, b, x, s, t);
-}
+const FF = (a, b, c, d, x, s, t) => md5cmn((b & c) | (~b & d), a, b, x, s, t);
+const GG = (a, b, c, d, x, s, t) => md5cmn((b & d) | (c & ~d), a, b, x, s, t);
+const HH = (a, b, c, d, x, s, t) => md5cmn(b ^ c ^ d, a, b, x, s, t);
+const II = (a, b, c, d, x, s, t) => md5cmn(c ^ (b | ~d), a, b, x, s, t);
 
 const binlMD5 = (x, len) => {
-
     // append padding
     x[len >> 5] |= 0x80 << (len % 32);
     x[((len + 64) >>> 9 << 4) + 14] = len;
@@ -171,8 +155,7 @@ const binlMD5 = (x, len) => {
     return [a, b, c, d];
 }
 
-const binl2rstr = (input) => {
-
+const binl2rstr = input => {
     const length32 = input.length * 32;
     let output = '';
 
@@ -183,8 +166,7 @@ const binl2rstr = (input) => {
     return output;
 }
 
-const rawStringToHex = (input) => {
-
+const rawStringToHex = input => {
     const hexTab = '0123456789abcdef';
     let output = '';
 
