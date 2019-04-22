@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/xn-02f/md5#readme",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "6.x"
   },
   "files": [
     "md5.js",
