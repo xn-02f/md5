@@ -7,11 +7,11 @@
 /**
  * Convert string to md5 hash.
  *
- * @param {string} value The raw string you want to convert.
+ * @param {string} data The raw string you want to convert.
  * @return {string} The hexadecimal hash string that is handled and converted.
  */
-module.exports = value => {
-    const stringUTF8 = unescape(encodeURIComponent(value));
+module.exports = data => {
+    const stringUTF8 = unescape(encodeURIComponent(data));
 
     const stringNumArr = rstr2binl(stringUTF8);
 

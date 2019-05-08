@@ -6,4 +6,4 @@
  */
 export = md5;
 
-declare const md5: (value: string) => string;
+declare const md5: (data: string) => string;
