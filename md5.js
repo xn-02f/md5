@@ -11,7 +11,7 @@
  * @return {string} The hexadecimal hash string that is handled and converted.
  */
 module.exports = data => {
-    const stringUTF8 = unescape(encodeURIComponent(data));
+    const stringUTF8 = decodeURIComponent(encodeURIComponent(data));
 
     const stringNumArr = rstr2binl(stringUTF8);
 
