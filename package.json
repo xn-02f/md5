@@ -5,7 +5,7 @@
   "main": "md5.js",
   "types": "md5.d.ts",
   "scripts": {
-    "test": "mocha"
+    "test": "ava test/*.js -v"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/xn-02f/md5#readme",
   "devDependencies": {
-    "mocha": "7.x"
+    "ava": "^3.7.0"
   },
   "files": [
     "md5.js",

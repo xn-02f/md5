@@ -1,7 +1,7 @@
 /*
  * This file is used to test.
  */
-const assert = require('assert');
+const test = require('ava');
 
 const md5 = require('../md5');
 
@@ -23,26 +23,36 @@ const md5Hash = {
     uriReserved: 'cae1061daebd7e3700817d67a2727fc2'
 }
 
-describe('MD5 Test', () => {
-    it('"' + example.name + '" Converted to MD5 Value Test.', () => {
-        assert.equal(md5(example.name), md5Hash.name);
-    });
+test('MD5 Test',  t => {
+    t.is(
+        md5(example.name),
+        md5Hash.name,
+        `'${example.name}' Converted to MD5 Value Test.`
+    )
 
-    it('"' + example.email + '" Converted to MD5 Value Test.', () => {
-        assert.equal(md5(example.email), md5Hash.email);
-    });
+    t.is(
+        md5(example.email),
+        md5Hash.email,
+        `'${example.email}' Converted to MD5 Value Test.`
+    )
 
-    it('"' + example.url + '" Converted to MD5 Value Test.', () => {
-        assert.equal(md5(example.url), md5Hash.url);
-    });
-});
+    t.is(
+        md5(example.url),
+        md5Hash.url,
+        `'${example.url}' Converted to MD5 Value Test.`
+    )
+})
 
-describe('Special Strings Test', () => {
-    it('Test reserved characters of URI: "' + example.uriReserved + '".', () => {
-        assert.equal(md5(example.uriReserved), md5Hash.uriReserved);
-    });
+test('Special Strings Test', t => {
+    t.is(
+        md5(example.uriReserved),
+        md5Hash.uriReserved,
+        `Test reserved characters of URI: '${example.uriReserved}'.`
+    )
 
-    it('Test chinese string "' + example.chinese + '".', () => {
-        assert.equal(md5(example.chinese), md5Hash.chinese);
-    });
-});
+    t.is(
+        md5(example.chinese),
+        md5Hash.chinese,
+        `Test chinese string '${example.chinese}'.`
+    )
+})
