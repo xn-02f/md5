@@ -1,12 +1,12 @@
 # Azure Pipelines configuration
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
   displayName: 'Install Node.js'
   inputs:
-    versionSpec: '11.x'
+    versionSpec: '14.x'
 
 # Test
 - script: |
