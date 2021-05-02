@@ -1,6 +1,6 @@
 /**
  * This is a file that is used to convert string to md5 hash.
- * (c) 2018-2020 | xn-02f Lab
+ * (c) 2018 | xn-02f Lab
  * License: MIT
  */
 

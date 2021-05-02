@@ -16,7 +16,7 @@ $ npm i @xn-02f/md5
 const md5 = require('@xn-02f/md5');
 // import md5 from '@xn-02f/md5'
 
-md5('xn-02f');  // return '54d30fa674d13e3598970bc9c5e2388e'
+md5('xn-02f');  // => '54d30fa674d13e3598970bc9c5e2388e'
 ```
 Parameter | return
 -- | --
@@ -29,6 +29,6 @@ Parameter | return
 <br>
 <div align=center>
     <sub>
-        &copy; 2020 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
+        &copy; 2021 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
     </sub>
 </div>
