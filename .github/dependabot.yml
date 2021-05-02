@@ -1,0 +1,14 @@
+# Set update schedule for nodejs
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    reviewers:
+      - Pengxn
+    labels:
+      - dependencies📦
+    open-pull-requests-limit: 3
+    target-branch: master
