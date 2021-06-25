@@ -1,6 +1,6 @@
 {
   "name": "@xn-02f/md5",
-  "version": "2.2.6",
+  "version": "2.3.0",
   "description": "A tiny MD5 library without dependencies for node, convert string to MD5 hash.",
   "main": "md5.js",
   "types": "md5.d.ts",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/xn-02f/md5#readme",
   "devDependencies": {
-    "ava": "^3.12.1"
+    "ava": "^3.15.0"
   },
   "files": [
     "md5.js",
