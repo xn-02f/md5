@@ -10,7 +10,7 @@
 Via npm :
 
 ```bash
-$ npm i @xn-02f/md5
+npm i @xn-02f/md5
 ```
 
 ## Usage
