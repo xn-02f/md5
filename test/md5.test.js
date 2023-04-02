@@ -1,9 +1,9 @@
 /*
  * This file is used to test.
  */
-const test = require('ava');
+import test from 'ava';
 
-const md5 = require('../md5');
+import md5 from '../md5.js';
 
 // Instance object for testing
 const example = {
@@ -11,6 +11,7 @@ const example = {
     email: 'i@huiyifyj.cn',
     url: 'xn--02f.com',
     chinese: '中文',
+    unicode: '\u4f60\u597d',
     uriReserved: ';/?:@&=+$,'
 }
 
@@ -20,6 +21,7 @@ const md5Hash = {
     email: '11b334f003ef029c9d154f5dbae18b44',
     url: '014dab5b5a990d379b2306f5d0839261',
     chinese: 'a7bac2239fcdcb3a067903d8077c4a07',
+    unicode: '7eca689f0d3389d9dea66ae112e5cfd7',
     uriReserved: 'cae1061daebd7e3700817d67a2727fc2'
 }
 
