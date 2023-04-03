@@ -1,8 +1,8 @@
 # MD5
 
-[![GithubActions](https://img.shields.io/github/actions/workflow/status/xn-02f/md5/test.yml?style=flat-square&logo=github)](https://github.com/xn-02f/md5/actions)
+[![Actions](https://img.shields.io/github/actions/workflow/status/xn-02f/md5/test.yml?style=flat-square&logo=github)](https://github.com/xn-02f/md5/actions)
 [![npm](https://img.shields.io/npm/v/@xn-02f/md5.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/@xn-02f/md5)
-[![LICENSE](https://img.shields.io/github/license/xn-02f/md5.svg?style=flat-square&logo=opensourceinitiative)](https://github.com/xn-02f/md5/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/xn-02f/md5.svg?style=flat-square&logo=opensourceinitiative)](https://github.com/xn-02f/md5/blob/main/LICENSE)
 > 🔓 `MD5` is tiny library without dependencies for node, convert string to MD5 hash.
 
 ## Install
@@ -10,7 +10,7 @@
 Via npm :
 
 ```bash
-$ npm i @xn-02f/md5
+npm i @xn-02f/md5
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Parameter | return
 
 ### License
 
-> [MIT](https://github.com/xn-02f/md5/blob/master/LICENSE)
+> [MIT](https://github.com/xn-02f/md5/blob/main/LICENSE)
 
 <br>
 <br>
