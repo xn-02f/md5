@@ -12,4 +12,4 @@
  */
 declare const md5: (data: string) => string;
 
-export = md5;
+export default md5;

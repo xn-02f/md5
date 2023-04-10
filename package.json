@@ -2,6 +2,8 @@
   "name": "@xn-02f/md5",
   "version": "2.4.4",
   "description": "A tiny MD5 library without dependencies for node, convert string to MD5 hash.",
+  "type": "module",
+  "exports":"./md5.js",
   "main": "md5.js",
   "types": "md5.d.ts",
   "scripts": {

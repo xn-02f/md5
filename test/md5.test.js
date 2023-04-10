@@ -1,9 +1,9 @@
 /*
  * This file is used to test.
  */
-const test = require('ava');
+import test from 'ava';
 
-const md5 = require('../md5');
+import md5 from '../md5.js';
 
 // Instance object for testing
 const example = {
