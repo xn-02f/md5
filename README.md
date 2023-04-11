@@ -16,8 +16,7 @@ npm i @xn-02f/md5
 ## Usage
 
 ```javascript
-const md5 = require('@xn-02f/md5');
-// import md5 from '@xn-02f/md5'
+import md5 from '@xn-02f/md5'
 
 md5('xn-02f');  // => '54d30fa674d13e3598970bc9c5e2388e'
 ```
