@@ -11,12 +11,11 @@
  * @return {string} The hexadecimal hash string that is handled and converted.
  * @example
  * ```
- * const md5 = require('@xn-02f/md5');
- * // import md5 from '@xn-02f/md5';
+ * import md5 from '@xn-02f/md5';
  * md5('xn-02f'); //=> '54d30fa674d13e3598970bc9c5e2388e'
  * ```
  */
-module.exports = data => {
+export default data => {
     const stringUTF8 = unescape(encodeURIComponent(data));
 
     const stringNumArr = rstr2binl(stringUTF8);
