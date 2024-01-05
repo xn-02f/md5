@@ -3,7 +3,7 @@
   "version": "2.4.4",
   "description": "A tiny MD5 library without dependencies for node, convert string to MD5 hash.",
   "type": "module",
-  "exports":"./md5.js",
+  "exports": "./md5.js",
   "main": "md5.js",
   "types": "md5.d.ts",
   "scripts": {
@@ -25,6 +25,9 @@
   "devDependencies": {
     "ava": "5.x",
     "tsd": "^0.28.1"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "files": [
     "md5.js",
