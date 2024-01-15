@@ -33,6 +33,6 @@ Parameter | return
 <br>
 <div align=center>
     <sub>
-        &copy; 2023 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
+        &copy; 2024 &nbsp; | &nbsp; <a href="https://xn-02f.github.io" target="_blank">xn-02f</a>
     </sub>
 </div>
