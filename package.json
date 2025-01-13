@@ -24,7 +24,7 @@
   "homepage": "https://github.com/xn-02f/md5#readme",
   "devDependencies": {
     "ava": "6.x",
-    "tsd": "^0.30.3"
+    "tsd": "^0.31.2"
   },
   "engines": {
     "node": ">=16"

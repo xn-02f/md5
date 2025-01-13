@@ -8,5 +8,8 @@ package-lock.json
 yarn.lock
 yarn-error.log
 
-# Mac
+# pnpm
+pnpm-lock.yaml
+
+# macOS
 .DS_Store
