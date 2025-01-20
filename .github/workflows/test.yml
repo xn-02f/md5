@@ -4,7 +4,15 @@ on: [push, pull_request]
 
 jobs:
   test:
+    name: Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 22
+          - 20
+          - 18
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -12,7 +20,7 @@ jobs:
       - name: Install nodejs
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: ${{ matrix.node-version }}
 
       - name: Run tests
         run: |
